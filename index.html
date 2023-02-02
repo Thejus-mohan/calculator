@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eacbd118ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+           <h2>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-square-js"></i>
+           </h2>
+       
+           <div id="display">
+                    <input id="calcScreen" type="text">
+           </div>
+         <div class="switches">
+            <div class="row1">
+                  <div class="r1c1">
+                       <button id="btnBo"onclick="displayContent(` &#40`)">(</button>
+                  </div>
+                  <div  class="r1c2" >
+                     <button id="btnBc" onclick="displayContent(`&#41`)">) </button>
+                 </div>
+                 <div class="r1c3">
+                     <button id="btnDlt" onclick="removeLast()" ondblclick="allClear()"><i class="fa-solid fa-delete-left"></i></button>
+                 </div>
+                 <div class="r1c4">
+                     <button id="btndiv" onclick="displayContent('/')">/</button>
+                 </div>
+            </div>
+          
+            <!--row 2  -->
+            <div class="row2">
+                   <div class="r2c1">
+                      <button id="btn7" onclick="displayContent('7')">7</button>
+                   </div>
+                   <div class="r2c2">
+                       <button id="btn8"onclick="displayContent('8')">8</button>
+                   </div>
+                   <div class="r2c3">
+                        <button id="btn9"onclick="displayContent('9')">9</button>
+                   </div>
+                   <div class="r2c4">
+                        <button id="btnMul"onclick="displayContent('*')">*</button>
+                   </div>
+            </div>
+            <!-- row3 -->
+            <div class="row3">
+                    <div class="r3c1">
+                        <button id="btn4" onclick="displayContent('4')">4</button>
+                    </div>
+                    <d
+                    iv class="r3c2">
+                         <button id="btn5"onclick="displayContent('5')">5</button>
+                    </d>
+                    <div class="r3c3">
+                         <button id="btn6" onclick="displayContent('6')">6</button>
+                    </div>
+                    <div class="r3c4">
+                          <button id="btnSub"onclick="displayContent('-')">-</button>
+                    </div>
+            </div>
+            <!-- row4 -->
+            <div class="row4">
+                  <div class="r4c1">
+                      <button id="btn1"onclick="displayContent('1')">1</button>
+                  </div>
+                  <div class="r4c2">
+                      <button id="btn2"onclick="displayContent('2')">2</button>
+                  </div>
+                  <div class="r4c3">
+                     <button id="btn3"onclick="displayContent('3')">3</button>
+                  </div>
+                  <div class="r4c4">
+                      <button id="btnPls"onclick="displayContent('+')">+</button>
+                  </div>
+            </div>
+            <!-- row5 -->
+            <div class="row5">
+                  <div class="r5c1">
+                     <button id="btn0"onclick="displayContent('0')">0</button>
+                  </div>
+                  <div class="r5c2">
+                     <button id="btnDot"onclick="displayContent('.')">.</button>
+                  </div>
+                  <div class="r5c3">
+                     <button id="btnExp">exp</button>
+                  </div>
+                  <div class="r5c4">
+                      <button id="btnEql" onclick="evaluateExpr()">=</button>
+                  </div>
+            </div>
+
+       </div>  
+
+    </div>
+</body>
+<!-- external js -->
+<script src="./calc.js"></script>
+</html>
